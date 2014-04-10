@@ -1,6 +1,6 @@
 # Coronary
 
-Tests CIDR blocks for OpenSSL[CVE-2014-0160][CVE] aka [Heartbleed][heartbleed].
+Tests CIDR blocks for OpenSSL [CVE-2014-0160][CVE] aka [Heartbleed][heartbleed].
 Inspired by Jonathan Rudenberg's [heartbleeder][heartbleeder].
 
 ## Using
