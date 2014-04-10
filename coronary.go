@@ -29,14 +29,16 @@ func main() {
 	}
 	flag.Parse()
 	cidr := flag.Arg(0)
+
 	pending, complete := make(chan *Host), make(chan *Host)
 
 	go func() {
-		fmt.Printf("Scanning: %s\n", cidr)
 		ip, ipnet, err := net.ParseCIDR(cidr)
 		if err != nil {
 			log.Fatal(err)
 		}
+
+		fmt.Printf("Scanning: %s\n", cidr)
 
 		for ip := ip.Mask(ipnet.Mask); ipnet.Contains(ip); inc(ip) {
 			host := fmt.Sprintf("%s:443", ip)
