@@ -1,4 +1,5 @@
-# Coronary
+# coronary
+![](http://share.amerine.net/heartbleed.png)
 
 Tests CIDR blocks for OpenSSL [CVE-2014-0160][CVE] aka [Heartbleed][heartbleed].
 
